@@ -1,0 +1,5 @@
+terraform.tfstate*
+terraform.tfvars
+# misc
+.DS_Store
+.idea

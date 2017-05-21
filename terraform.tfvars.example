@@ -1,0 +1,20 @@
+aws_key_name = "your_aws_key_name"
+# if you don't know, you can get this using:
+#$ aws ec2 describe-key-pairs
+#{
+#    "KeyPairs": [
+#        {
+#            "KeyName": "your_aws_key_name",
+#            "KeyFingerprint": "xyz"
+#        }
+#    ]
+#}
+
+web_cv_domain = "example.com"
+# this should be the main domain - 'www.' sub domain (alias) will be created for you
+
+web_cv_ansible_repo = "https://github.com/foo/cv-bar"
+# needs to be public or you will need to setup keys on the box to access github etc
+
+web_cv_ansible_playbook = "path_to_playbook_in_above_repo"
+# needs to be compatible with running locally on the aws instance: http://docs.ansible.com/ansible/playbooks_delegation.html#local-playbooks
