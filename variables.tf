@@ -14,8 +14,13 @@ variable "web_cv_ansible_playbook" {
 }
 
 variable "web_cv_ansible_branch" {
-  description = "Path to the ansible playbook used in the web_cv_ansible_repo"
+  description = "Branch checked out by ansible on web_cv_ansible_repo"
   default = "master"
+}
+
+variable "web_cv_ansible_beta_branch" {
+  description = "Branch checke dout for beta machines on web_cv_ansible_repo"
+  default = "develop"
 }
 
 variable "web_cv_ansible_checkout_dir" {
